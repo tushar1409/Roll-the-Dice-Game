@@ -16,7 +16,7 @@ const btnHold = document.querySelector('.btn--hold');
 let scores, currentScore, activePlayer, playing;
 
 // Starting conditions/resetiing conditions
-const init = function () {
+const reset = function () {
   scores = [0, 0];
   currentScore = 0;
   activePlayer = 0;
@@ -96,4 +96,6 @@ btnHold.addEventListener('click', function () {
   }
 });
 
-btnNew.addEventListener('click', init);
+
+//Resetting the game on clicking the bew game button by calling the reset function
+btnNew.addEventListener('click', reset);
